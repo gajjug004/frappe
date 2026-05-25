@@ -1,18 +1,11 @@
 # Copyright (c) 2020, Frappe Technologies and Contributors
 # License: MIT. See LICENSE
-<<<<<<< HEAD
-# import frappe
-=======
 import frappe
 from frappe.desk.doctype.number_card.number_card import get_cards_for_user
->>>>>>> 0744c9b960 (test: add test case)
 from frappe.tests import IntegrationTestCase
 
 
 class TestNumberCard(IntegrationTestCase):
-<<<<<<< HEAD
-	pass
-=======
 	def test_report_card_hidden_when_report_is_not_allowed(self):
 		user = "test2@example.com"
 		report_name = "Test Restricted Number Card Report"
@@ -142,4 +135,3 @@ class TestNumberCard(IntegrationTestCase):
 
 		self.assertEqual([row[0] for row in blocked_results], [])
 		self.assertEqual([row[0] for row in allowed_results], [allowed_card_name])
->>>>>>> 0744c9b960 (test: add test case)
